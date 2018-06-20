@@ -2,7 +2,7 @@
 
 이 폴더는 카카오톡 플러스 친구를 이용한 영등포고등학교 알람서비스인 ydpalarm에 사용된 코드들입니다.
 
-제공중인 서비스
+◎ 제공중인 서비스
 1. 오늘의 급식
 	- 중식
 	- 석식
@@ -23,9 +23,25 @@ url : https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=blMy&q
 4. 개발하기 까지
 : 개발하기까지 참고한 사이트, 블로그 , 분들께 감사를 표하는 기능입니다.
 
-추가 예정인 기능
+
+◎ 추가 예정인 기능
 1. 선생님 교무실 위치
 : 선생님의 교무실 위치 알림 시스템을 추가할 예정입니다.
 
 2. 스포츠 리그 일정표
 : 스포츠 리그의 일정표를 표시할수 있도록 개발예정 입니다.
+
+◎ 파이썬 사용 모듈
+- BeautifulSoup4
+- regex
+- datetime
+- requests
+- re
+
+◎ ubuntu 사용 프로그램
+- python
+- apache
+- Django
+
+◎ 서버
+- Amazon Web Services Cloud
