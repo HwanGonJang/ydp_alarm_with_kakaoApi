@@ -1,3 +1,5 @@
+# ydpalarm 챗봇을 돌릴때 사용되는 ubuntu 서버에 /home/ubuntu/django/meal에 위치한 views.py파일의 내용입니다.
+
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -181,7 +183,8 @@ def message(request):
                     'type':'buttons',
                     'buttons':['오늘급식','오늘의명언','2학년6반시간표','개발하기까지']
                 }
-                    
+            })
+
 
     elif datacontent == '석식':
 
@@ -193,5 +196,4 @@ def message(request):
                     'type':'buttons',
                     'buttons':['오늘급식','오늘의명언','2학년6반시간표','개발하기까지']
                 }
-
             })
