@@ -88,8 +88,9 @@ elif t[r] == "수":
     class26 = sub + bar + classTime + bar + danger
 elif t[r] == "목":
     classTime = "1 . 체육\n2. 일본어/중국어\n3. 미적\n4. 영B\n5. 미적\n6. 지구과학\n7. 문B\n"
+    class26 = sub + bar + classTime + bar + danger
 elif t[r] == "금":
-    classTime = "1 . 미적\n2. 화확\n3. 생물\n4. 영A\n5. 창체\n6. 창체\n"
+    classTime = "1 . 미적\n2. 화학\n3. 생물\n4. 영A\n5. 창체\n6. 창체\n"
     class26 = sub + bar + classTime + bar + danger
 elif t[r] == "토" or "일":
     classTime = "토,일요일은 수업이 없습니다\n"
