@@ -20,7 +20,7 @@ elif t[r] == "수":
 elif t[r] == "목":
     classTime = "1 교시:  체육\n2 교시:  일본어/중국어\n3 교시:  미적\n4 교시:  영B\n5 교시:  미적\n6 교시:  지구과학\n7 교시:  문B\n"
 elif t[r] == "금":
-    classTime = "1 교시:  미적\n2 교시:  화확\n3 교시:  생물\n4 교시:  영A\n5 교시:  창체\n6 교시:  창체\n"
+    classTime = "1 교시:  미적\n2 교시:  화학\n3 교시:  생물\n4 교시:  영A\n5 교시:  창체\n6 교시:  창체\n"
     class26 = sub + bar + classTime + bar + danger
 elif t[r] == "토" or "일":
     classTime = "토,일요일은 수업이 없습니다\n"
