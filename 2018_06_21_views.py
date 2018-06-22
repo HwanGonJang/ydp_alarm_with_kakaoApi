@@ -71,12 +71,11 @@ error = "주말과 공휴일에는\n아무것도 나타나지 않아욥!"
 mealM += todate+ t[r] + "요일\n" + bar + "중식\n"+ meal1+ bar + error
 mealD += todate+ t[r] + "요일\n" + bar + "석식\n" + meal2 +bar + error
 #========================================오늘의급식end
+#========================================class26
 sub = t[r] + "요일 시간표\n"
 bar = "==========\n"
 danger = "시간표가변경될수있습니다."
 
-class25 = ""
-class26 = ""
 if t[r] == "월":
     classTime = "1교시: 물리\n2교시: 생물\n3교시: 미적\n4교시: 미술\n5교시: 영A\n6교시: 문A\n7교시: 문C\n"
     class26 = sub + bar + classTime + bar + danger
@@ -106,7 +105,7 @@ elif t[r] == "화":
 elif t[r] == "수":
     classTime = "1 교시: 생물\n2교시: 문B\n3교시: 지구과학\n4교시: 미적\n5교시: 일본어/중국어\n6교시: 미술\n"
     class25 = sub + bar + classTime + bar + danger
-    elif t[r] == "목":
+elif t[r] == "목":
     classTime = "1 교시: 영A\n2 교시: 일본어/중국어\n3 교시: 미술\n4 교시: 화학\n5 교시: 생물\n6 교시: 문C\n7 교시: 미적\n"
     class25 = sub + bar + classTime + bar + danger
 elif t[r] == "금":
