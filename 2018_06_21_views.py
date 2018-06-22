@@ -78,19 +78,19 @@ danger = "시간표가변경될수있습니다."
 class25 = ""
 class26 = ""
 if t[r] == "월":
-    classTime = "1 . 물리\n2. 생물\n3. 미적\n4. 미술\n5. 영A\n6. 문A\n7. 문C\n"
+    classTime = "1교시: 물리\n2교시: 생물\n3교시: 미적\n4교시: 미술\n5교시: 영A\n6교시: 문A\n7교시: 문C\n"
     class26 = sub + bar + classTime + bar + danger
 elif t[r] == "화":
-    classTime = "1 . 미적\n2. 영A\n3. 문B\n4. 일본어/중국어\n5. 체육A\n6. 진로\n7. 화학\n"
+    classTime = "1교시: 미적\n2교시: 영A\n3교시: 문B\n4교시: 일본어/중국어\n5교시: 체육A\n6교시: 진로\n7교시: 화학\n"
     class26 = sub + bar + classTime + bar + danger
 elif t[r] == "수":
-    classTime = "1 . 지구과학\n2. 문A\n3. 물리\n4. 미술\n5. 일본어/중국어\n6. 미적A\n"
+    classTime = "1교시: 지구과학\n2교시: 문A\n3교시: 물리\n4교시: 미술\n5교시: 일본어/중국어\n6교시: 미적A\n"
     class26 = sub + bar + classTime + bar + danger
 elif t[r] == "목":
-    classTime = "1 . 체육\n2. 일본어/중국어\n3. 미적\n4. 영B\n5. 미적\n6. 지구과학\n7. 문B\n"
+    classTime = "1교시: 체육\n2교시: 일본어/중국어\n3교시: 미적\n4교시: 영B\n5교시: 미적\n6교시: 지구과학\n7교시: 문B\n"
     class26 = sub + bar + classTime + bar + danger
 elif t[r] == "금":
-    classTime = "1 . 미적\n2. 화확\n3. 생물\n4. 영A\n5. 창체\n6. 창체\n"
+    classTime = "1교시: 미적\n2교시: 화학\n3교시: 생물\n4교시: 영A\n5교시: 창체\n6교시: 창체\n"
     class26 = sub + bar + classTime + bar + danger
 elif t[r] == "토" or "일":
     classTime = "토,일요일은 수업이 없습니다\n"
@@ -98,19 +98,19 @@ elif t[r] == "토" or "일":
 #=================================class26end
 #=================================class25
 if t[r] == "월":
-    classTime = "1교시:  영B\n2교시:  미적\n3교시:  체육\n4교시:  물리\n5교시:  문A\n6교시:  지구과학\n7교시:  진로\n"
+    classTime = "1 교시: 영B\n2교시: 미적\n3교시: 체육\n4교시: 물리\n5교시: 문A\n6교시: 지구과학\n7교시: 진로\n"
     class25 = sub + bar + classTime + bar + danger
 elif t[r] == "화":
-    classTime = "1교시:  영A\n2교시:  체육\n3교시: 문A\n4교시:  일본어/중국어\n5교시:  화학A\n6교시:  미적\n7교시:  미적\n"
+    classTime = "1 교시: 영A\n2교시: 체육\n3교시: 문A\n4교시: 일본어/중국어\n5교시: 화학A\n6교시: 미적\n7교시: 미적\n"
     class25 = sub + bar + classTime + bar + danger
 elif t[r] == "수":
-    classTime = "1교시:  생물\n2교시:  문B\n3교시:  지구과학\n4교시:  미적\n5교시:  일본어/중국어\n6교시:  미술\n"
+    classTime = "1 교시: 생물\n2교시: 문B\n3교시: 지구과학\n4교시: 미적\n5교시: 일본어/중국어\n6교시: 미술\n"
     class25 = sub + bar + classTime + bar + danger
     elif t[r] == "목":
-    classTime = "1 교시:  영A\n2 교시:  일본어/중국어\n3 교시:  미술\n4 교시:  화학\n5 교시:  생물\n6 교시:  문C\n7 교시:  미적\n"
+    classTime = "1 교시: 영A\n2 교시: 일본어/중국어\n3 교시: 미술\n4 교시: 화학\n5 교시: 생물\n6 교시: 문C\n7 교시: 미적\n"
     class25 = sub + bar + classTime + bar + danger
 elif t[r] == "금":
-    classTime = "1 교시:  물리\n2 교시:  영A\n3 교시:  문B\n4 교시:  미적\n5 교시:  창체\n6 교시:  창체\n"
+    classTime = "1 교시: 물리\n2 교시: 영A\n3 교시: 문B\n4 교시: 미적\n5 교시: 창체\n6 교시: 창체\n"
     class25 = sub + bar + classTime + bar + danger
 elif t[r] == "토" or "일":
     classTime = "토,일요일은 수업이 없습니다\n"
@@ -118,19 +118,19 @@ elif t[r] == "토" or "일":
 #===============================class25end
 #===============================class36
 if t[r] == "월":
-    classTime = "1교시:  확통\n2교시:  영A\n3교시:  물리\n4교시:  한A\n5교시:  작B\n6교시:  지학\n7교시:  기벡\n"
+    classTime = "1 교시: 확통\n2교시: 영A\n3교시: 물리\n4교시: 한A\n5교시: 작B\n6교시: 지학\n7교시: 기벡\n"
     class36 = sub + bar + classTime + bar + danger
 elif t[r] == "화":
-    classTime = "1교시:  법정\n2교시:  물리\n3교시: 기벡\n4교시:  진로\n5교시:  작A\n6교시:  체육\n7교시:  영A\n"
+    classTime = "1 교시: 법정\n2교시: 물리\n3교시: 기벡\n4교시: 진로\n5교시: 작A\n6교시: 체육\n7교시: 영A\n"
     class36 = sub + bar + classTime + bar + danger
 elif t[r] == "수":
-    classTime = "1교시:  지학\n2교시:  확통\n3교시:  영B\n4교시:  작B\n5교시:  기벡\n6교시:  한B\n"
+    classTime = "1 교시: 지학\n2교시: 확통\n3교시: 영B\n4교시: 작B\n5교시: 기벡\n6교시: 한B\n"
     class36 = sub + bar + classTime + bar + danger
 elif t[r] == "목":
-    classTime = "1 교시:  영A\n2 교시:  기벡\n3 교시:  법정\n4 교시:  한B\n5 교시:  체육\n6 교시:  작A\n7 교시:  물리\n"
+    classTime = "1 교시: 영A\n2 교시: 기벡\n3 교시: 법정\n4 교시: 한B\n5 교시: 체육\n6 교시: 작A\n7 교시: 물리\n"
     class36 = sub + bar + classTime + bar + danger
 elif t[r] == "금":
-    classTime = "1 교시:  영B\n2 교시:  기벡\n3 교시:  한A\n4 교시:  지학\n5 교시:  창체\n6 교시:  창체\n"
+    classTime = "1 교시: 영B\n2 교시: 기벡\n3 교시: 한A\n4 교시: 지학\n5 교시: 창체\n6 교시: 창체\n"
     class36 = sub + bar + classTime + bar + danger
 elif t[r] == "토" or "일":
     classTime = "토,일요일은 수업이 없습니다\n"
