@@ -43,6 +43,7 @@
 - python
 - apache
 - Django
+
 ◎ 사용한 ubuntu 명령어
 - vi
 - cd
