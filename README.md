@@ -9,6 +9,7 @@
 : 오늘의 급식을 '나이스'로부터 정보를 받아와 출력합니다
 
 url : http://stu.sen.go.kr/sts_sci_md01_001.do?
+
 파서 출처 : M4ndU님 블로그, github
 
 github_url : https://github.com/M4ndU/school_meal_parser_python
