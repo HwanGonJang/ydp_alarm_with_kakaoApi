@@ -70,7 +70,9 @@ error = "주말과 공휴일에는\n아무것도 나타나지 않아욥!"
 mealM += todate+ t[r] + "요일\n" + bar + "중식\n"+ meal1+ bar + error
 mealD += todate+ t[r] + "요일\n" + bar + "석식\n" + meal2 +bar + error
 #========================================오늘의급식end
-#========================================class기틀
+#========================================오늘의 명언
+
+#========================================오늘의 명언end
 sub = t[r] + "요일 시간표\n"
 bar = "==========\n"
 danger = "시간표가변경될수있습니다.\n오타제보"
@@ -549,7 +551,7 @@ def keyboard(request):
 
     return JsonResponse({
         'type':'buttons',
-        'buttons':['오늘급식','선생님 위치 정보','시간표','오늘의명언','개발정보']
+        'buttons':['오늘급식','선생님 위치 정보','시간표','오늘의명언','영등포고등학교 홈페이지','인성스포츠대회 경기일정','개발정보']
     })
 
 @csrf_exempt
@@ -569,14 +571,25 @@ def message(request):
                     'type':'buttons',
                     'buttons':['중식','석식']
                 }
+            })
 
+    elif datacontent == '처음으로':
+
+        return JsonResponse({
+                'message': {
+                    'text': '처음으로'
+                },
+                'keyboard': {
+                    'type':'buttons',
+                    'buttons':['오늘급식','선생님 위치 정보','오늘의명언','시간표','영등포고등학교 홈페이지','인성스포츠대회 경기일정','개발정보']
+                }
             })
 
     elif datacontent == '오늘의명언':
 
         return JsonResponse({
                 'message': {
-                    'text': '무지개를 보고싶다면\n비를 견뎌내야 한다.\n     -채근담-'
+                    'text': '기분이 저기압일땐 반드시 고기앞으로 가라\n		-Google-'
                 },
                 'keyboard': {
                     'type':'buttons',
@@ -596,6 +609,31 @@ def message(request):
                 }
             })
 
+    elif datacontent == '인성스포츠대회 경기일정':
+
+        return JsonResponse({
+                'message': {
+                    'text': '현재 아직 인성스포츠대회 경기일정이 없습니다.'
+                },
+                'keyboard': {
+                    'type':'buttons',
+                    'buttons':['처음으로']
+                }
+            })
+
+    elif datacontent == '영등포고등학교 홈페이지':
+
+        return JsonResponse({
+                'message': {
+                    'text': '더 자세한 사항은 영등포고등학교 홈페이지를 참고하세요. \n홈페이지 주소 : http://www.ydp.hs.kr/index.do'
+                },
+                'keyboard': {
+                    'type':'buttons',
+                    'buttons':['처음으로']
+                }
+            })
+
+
     elif datacontent == '시간표':
 
         return JsonResponse({
@@ -606,7 +644,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['1학년','2학년','3학년']
                 }
-
             })
 
     elif datacontent == '1학년':
@@ -619,7 +656,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['1학년1반','1학년2반','1학년3반','1학년4반','1학년5반','1학년6반','1학년7반','1학년8반']
                 }
-
             })
 
     elif datacontent == '2학년':
@@ -632,7 +668,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['2학년1반','2학년2반','2학년3반','2학년4반','2학년5반','2학년6반','2학년7반','2학년8반']
                 }
-
             })
 
 
@@ -646,21 +681,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['3학년1반','3학년2반','3학년3반','3학년4반','3학년5반','3학년6반','3학년7반','3학년8반']
                 }
-
-            })
-
-
-    elif datacontent == '처음으로':
-
-        return JsonResponse({
-                'message': {
-                    'text': '처음으로'
-                },
-                'keyboard': {
-                    'type':'buttons',
-                    'buttons':['오늘급식','선생님 위치 정보','오늘의명언','시간표','개발정보']
-                }
-
             })
 
     elif datacontent == '중식':
@@ -983,7 +1003,7 @@ def message(request):
                 },
                 'keyboard': {
                     'type':'buttons',
-                    'buttons':['강우희 선생님','고경길 선생님','공지연 선생님','김경한 선생님','김민정 선생님','김보경 선생님','김서령 선생님','김수정 선생님','김은애 선생님','김주현 선생님','김지연 선생님','김창길 선생님','김흥일 선생님','권혜숙 선생님','나우철 선생님','나태영 교감선생님','나현경 선생님','남영남 선생님','박근배 선생님','박미옥 선생님','박민아 선생님','박베두루 선생님','박수현 선생님','박영갑 선생님','박원진 선생님','박점남 선생님','박종식 선생님','성순철 선생님','손민정 선생님','송 현 선생님','신나라 선생님','옥준석 선생님','우윤정 선생님','우주연 선생님','유호정 선생님','유안나 선생님','유완호 선생님','이준용 교장선생님','이연희 선생님','이주현 선생님','이동준 선생님','이상은 선생님','이원우 선생님','이은지 선생님','이미정 선생님','이상학 선생님','이선경 선생님','이정현 선생님','임정희 선생님','임정윤 선생님','전지인 선생님','정정영 선생님','조인 선생님','최나리 선생님','하선종 선생님','하형숙 선생님','한은영 선생님','허호 선생님','홍일섭 선생님','홍임효 선생님']
+                    'buttons':['강우희 선생님','고경길 선생님','공지연 선생님','김경한 선생님','김민정 선생님','김보경 선생님','김서령 선생님','김수정 선생님','김은애 선생님','김주현 선생님','김지연 선생님','김창길 선생님','김흥일 선생님','권혜숙 선생님','나우철 선생님','나태영 교감선생님','나현경 선생님','남영남 선생님','류미진 선생님','박근배 선생님','박미옥 선생님','박민아 선생님','박베두루 선생님','박수현 선생님','박영갑 선생님','박원진 선생님','박점남 선생님','박종식 선생님','성순철 선생님','손민정 선생님','송 현 선생님','신나라 선생님','옥준석 선생님','우윤정 선생님','우주연 선생님','유호정 선생님','유안나 선생님','유완호 선생님','이준용 교장선생님','이연희 선생님','이주현 선생님','이동준 선생님','이상은 선생님','이원우 선생님','이은지 선생님','이미정 선생님','이상학 선생님','이선경 선생님','이정현 선생님','임정희 선생님','임정윤 선생님','전예슬 선생님','전지인 선생님','정정영 선생님','조인 선생님','최나리 선생님','하선종 선생님','하형숙 선생님','한은영 선생님','허호 선생님','홍일섭 선생님','홍임효 선생님']
                 }
             })
 	
@@ -997,7 +1017,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '고경길 선생님':
@@ -1010,7 +1029,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == ' 공지연 선생님':
@@ -1023,10 +1041,7 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
-
-
 
     elif datacontent == '김경한 선생님':
 
@@ -1038,7 +1053,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '김민정 선생님':
@@ -1051,7 +1065,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '김보경 선생님':
@@ -1064,9 +1077,7 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
-
 
     elif datacontent == '김서령 선생님':
 
@@ -1078,7 +1089,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '김수정 선생님':
@@ -1091,7 +1101,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '김은애 선생님':
@@ -1104,20 +1113,18 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '김주현 선생님':
 
         return JsonResponse({
                 'message': {
-                    'text': '갓주현 선생님은 3층 안전생활부에 계십니다.'
+                    'text': '킹갓엠페러제너럴충무공마제스티목탁마스터 주현 선생님은 3층 안전생활부에 계십니다.'
                 },
                 'keyboard': {
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '김지연 선생님':
@@ -1130,7 +1137,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '김창길 선생님':
@@ -1143,7 +1149,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '김흥일 선생님':
@@ -1156,7 +1161,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '권혜숙 선생님':
@@ -1169,7 +1173,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
 
@@ -1183,7 +1186,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '나태영 교감선생님':
@@ -1196,7 +1198,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '나현경 선생님':
@@ -1209,7 +1210,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '남영남 선생님':
@@ -1222,7 +1222,18 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
+            })
 
+    elif datacontent == '류미진 선생님':
+
+        return JsonResponse({
+                'message': {
+                    'text': '류미진(달마 견주님) 선생님은 2층 방송통신고 교무부에 계십니다.'
+                },
+                'keyboard': {
+                    'type':'buttons',
+                    'buttons':['처음으로']
+                }
             })
 
     elif datacontent == '박근배 선생님':
@@ -1235,7 +1246,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '박미옥 선생님':
@@ -1248,7 +1258,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '박민아 선생님':
@@ -1261,7 +1270,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '박베두루 선생님':
@@ -1274,7 +1282,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '박수현 선생님':
@@ -1287,7 +1294,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '박영갑 선생님':
@@ -1300,7 +1306,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '박원진 선생님':
@@ -1313,7 +1318,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '박점남 선생님':
@@ -1326,7 +1330,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '박종식 선생님':
@@ -1339,7 +1342,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '성순철 선생님':
@@ -1352,7 +1354,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '손민정 선생님':
@@ -1365,7 +1366,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
           
     elif datacontent == '송 현 선생님':
@@ -1378,7 +1378,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '신나라 선생님':
@@ -1391,7 +1390,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
 
@@ -1411,7 +1409,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '우윤정 선생님':
@@ -1424,7 +1421,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '우주연 선생님':
@@ -1437,7 +1433,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '유완호 선생님':
@@ -1450,7 +1445,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '유안나 선생님':
@@ -1463,7 +1457,18 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
+            })
 
+    elif datacontent == '유호정 선생님':
+
+        return JsonResponse({
+                'message': {
+                    'text': '유호정 선생님은 2층 안전생활부에 계십니다.'
+                },
+                'keyboard': {
+                    'type':'buttons',
+                    'buttons':['처음으로']
+                }
             })
 
 
@@ -1477,21 +1482,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
-            })
-
-
-    elif datacontent == '유호정 선생님':
-
-        return JsonResponse({
-                'message': {
-                    'text': '유호정 선생님은 2층 안전생활부에 계십니다.'
-                },
-                'keyboard': {
-                    'type':'buttons',
-                    'buttons':['처음으로']
-                }
-
             })
 
     elif datacontent == '이동준 선생님':
@@ -1504,7 +1494,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
 
@@ -1518,7 +1507,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '이상은 선생님':
@@ -1531,7 +1519,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '이상학 선생님':
@@ -1544,7 +1531,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '이선경 선생님':
@@ -1557,7 +1543,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '이연희 선생님':
@@ -1570,7 +1555,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '이원우 선생님':
@@ -1583,7 +1567,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '이은지 선생님':
@@ -1596,7 +1579,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '이정현 선생님':
@@ -1609,7 +1591,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
 
@@ -1623,7 +1604,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '이준용 교장선생님':
@@ -1636,7 +1616,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '임정윤 선생님':
@@ -1649,7 +1628,18 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
+            })
 
+    elif datacontent == '전예슬 선생님':
+
+        return JsonResponse({
+                'message': {
+                    'text': '전예슬 선생님은 3층 자연과학교육부에 계십니다.'
+                },
+                'keyboard': {
+                    'type':'buttons',
+                    'buttons':['처음으로']
+                }
             })
 
     elif datacontent == '전지인 선생님':
@@ -1662,7 +1652,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '정정영 선생님':
@@ -1675,7 +1664,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '조인 선생님':
@@ -1688,7 +1676,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '최나리 선생님':
@@ -1701,7 +1688,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '하선종 선생님':
@@ -1714,7 +1700,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '하형숙 선생님':
@@ -1727,7 +1712,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '한은영 선생님':
@@ -1740,7 +1724,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '허호 선생님':
@@ -1753,7 +1736,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '홍일섭 선생님':
@@ -1766,7 +1748,6 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
 
     elif datacontent == '홍임효 선생님':
@@ -1779,5 +1760,4 @@ def message(request):
                     'type':'buttons',
                     'buttons':['처음으로']
                 }
-
             })
