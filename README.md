@@ -57,7 +57,7 @@
 - vi
 - cd
 - sudo apachectl -k restart
-- crontab
+- crontab (시간이 UTC 0에 맞춰져 있어 crontab 사용시 주의)
 - mkdir
 
 ◎ 서버
