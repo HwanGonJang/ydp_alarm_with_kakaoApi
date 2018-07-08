@@ -16,3 +16,5 @@
 2018_06_08 - 서버 apache 자동으로 매일 00시 01분에 재시작 되도록 수정
   -sudo crontab -e
   -/etc/init.d/apache2
+2018_07_08 - 1:1 상담원 추가, 오타수정, crontab 시간 UTC+0과 UTC+9 조정
+  -crontab에서 01 00 으로 지정되 있었던 분, 시간을 01 15로 수정
