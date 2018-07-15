@@ -14,7 +14,7 @@
 - M4ndU'blog : http://mandu-mandu.tistory.com/category/Project/Programming
 
 2. 오늘의 명언
-: 오늘의 명언을 naver로부터 정보를 받아와 출력합니다. (오류가 나타나는 관계로 지금은 임시로 입력된 값이 출력됩니다.)
+: 오늘의 명언을 naver로부터 정보를 받아와 출력합니다. (현재 HTTP ERROR 403으로 임시 명언)
 - url : https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=blMy&query=%EA%B3%B5%EB%B6%80%20%EB%AA%85%EC%96%B8
 
 3. 시간표
@@ -27,16 +27,14 @@
 5. 선생님 교무실 위치
 : 선생님의 교무실 위치를 라벨별 출력합니다(이스터에그 존재).
 
+6. 학교 일정
+: 건의를 받은 학교 일정도 추가해볼 생각입니다.
+
 
 ◎ 추가 예정인 기능
-1. 학교 일정
-: 건의를 받은 학교 일정도 추가해볼 생각입니다.
 
 2. 스포츠 리그 일정표
 : 스포츠 리그의 일정표를 표시할수 있도록 개발예정 입니다.
-
-3. google 설문지를 이용한 간단한 평가와 건의사항 페이지
-: google 설문지를 이용한 간단한 평가와 건의 사항 페이지를 개설
 
 4. 공지사항 버튼 추가
 : 학교에서 중요한 내용을 받아, 받은 날 자정 업데이트 될 
@@ -47,18 +45,23 @@
 - datetime
 - requests
 - re
+- random
+- openurl
 
 ◎ ubuntu 사용 프로그램
 - python
 - apache
 - Django
+- venv
 
-◎ 사용한 ubuntu 명령어
+◎ 주로 사용한 ubuntu 명령어
 - vi
 - cd
 - sudo apachectl -k restart
 - crontab (시간이 UTC 0에 맞춰져 있어 crontab 사용시 주의)
 - mkdir
+- cp
+- touch
 
 ◎ 서버
 - Amazon Web Services Cloud
