@@ -20,7 +20,7 @@ elif t[r] == "금":
     classTime00 = "1교시: @\n2교시: @\n3교시: @\n4교시: @\n5교시: @\n6교시: @\n"
 elif t[r] == "토" or "일":
     classTime00 = "토,일요일은 수업이 없습니다\n"
-
+    
 class00 = sub + bar + classTime00 + bar + danger
     
 #print(class00) #테스트용도
