@@ -18,3 +18,7 @@
   -/etc/init.d/apache2
 2018_07_08 - 1:1 상담원 추가, 오타수정, crontab 시간 UTC+0과 UTC+9 조정
   -crontab에서 01 00 으로 지정되 있었던 분, 시간을 01 15로 수정
+2018_09_05 - 오늘의 명언 http error 403 forbidden 문제 해결 실패로 삭제
+  - http error 403 forbidden 해결 실패로 삭제
+  - 공지 기능 추가
+  - 2학년 시간표 
