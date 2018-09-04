@@ -14,9 +14,8 @@
 - github_url : https://github.com/M4ndU/school_meal_parser_python
 - M4ndU'blog : http://mandu-mandu.tistory.com/category/Project/Programming
 
-2. 오늘의 명언 (다음 업데이트에 오류수정 실패시 삭제될수 있습니다)
-: 오늘의 명언을 naver로부터 정보를 받아와 출력합니다. (현재 HTTP ERROR 403으로 임시 명언)
-- url : https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=blMy&query=%EA%B3%B5%EB%B6%80%20%EB%AA%85%EC%96%B8
+2. 스포츠 리그 일정표
+: 스포츠 리그의 일정표 이미지로 출력합니다. ( 카카오톡 링크로, 사진 확대가 불가능합니다. 개선할 계획입니다.)
 
 3. 시간표
 : 오늘의 시간표를 출력합니다.
@@ -28,16 +27,18 @@
 5. 선생님 교무실 위치
 : 선생님의 교무실 위치를 라벨별 출력합니다(이스터에그 존재).
 
-6. 학교 일정
-: 건의를 받은 학교 일정도 추가해볼 생각입니다.
-
-7. 공지사항 버튼 추가
+6. 공지사항 버튼 추가
 : 학교에서 중요한 내용을 받아, 받은 날 자정 업데이트 됩니다. 
 
 ◎ 추가 예정인 기능
+1. 오늘의 경기
+: 오늘의 스포츠리그 경기를 추가하여 알려줍니다.
 
-1. 스포츠 리그 일정표
-: 스포츠 리그의 일정표를 표시할수 있도록 개발예정 입니다.
+◎ 삭제된 기능
+1. 오늘의 명언 (다음 업데이트에 오류수정 실패시 삭제될수 있습니다)
+: 오늘의 명언을 naver로부터 정보를 받아와 출력합니다. (현재 HTTP ERROR 403으로 임시 명언)
+- url : https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=blMy&query=%EA%B3%B5%EB%B6%80%20%EB%AA%85%EC%96%B8
+
 
 ◎ 파이썬 사용 모듈
 - BeautifulSoup4
