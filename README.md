@@ -29,16 +29,16 @@
 6. 공지사항 버튼 추가
 : 학교에서 중요한 내용을 받아, 받은 날 자정 업데이트 됩니다. 
 
-#◎ 추가 예정인 기능
+# ◎ 추가 예정인 기능
 1. 
 
-#◎ 삭제된 기능
+# ◎ 삭제된 기능
 1. 오늘의 명언 (다음 업데이트에 오류수정 실패시 삭제될수 있습니다)
 : 오늘의 명언을 naver로부터 정보를 받아와 출력합니다. (현재 HTTP ERROR 403으로 임시 명언)
 - url : https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=blMy&query=%EA%B3%B5%EB%B6%80%20%EB%AA%85%EC%96%B8
 
 
-#◎ 파이썬 사용 모듈
+# ◎ 파이썬 사용 모듈
 - BeautifulSoup4
 - regex
 - datetime
@@ -47,13 +47,13 @@
 - random
 - openurl
 
-#◎ ubuntu 사용 프로그램
+# ◎ ubuntu 사용 프로그램
 - python
 - apache
 - Django
 - venv
 
-#◎ 주로 사용한 ubuntu 명령어
+# ◎ 주로 사용한 ubuntu 명령어
 - vi
 - cd
 - sudo apachectl -k restart
@@ -62,5 +62,5 @@
 - cp
 - touch
 
-#◎ 서버
+# ◎ 서버
 - Amazon Web Services Cloud
