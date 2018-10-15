@@ -30,7 +30,7 @@
 : 학교에서 중요한 내용을 받아, 받은 날 자정 업데이트 됩니다. 
 
 # ◎ 추가 예정인 기능
-1. 
+1. 없음
 
 # ◎ 삭제된 기능
 1. 오늘의 명언 (다음 업데이트에 오류수정 실패시 삭제될수 있습니다)
@@ -54,13 +54,13 @@
 - venv
 
 # ◎ 주로 사용한 ubuntu 명령어
-- vi
-- cd
-- sudo apachectl -k restart
-- crontab (시간이 UTC 0에 맞춰져 있어 crontab 사용시 주의)
-- mkdir
-- cp
-- touch
+- vi (문서편집기)
+- cd (이동)
+- sudo apachectl -k restart (아파치 재시작)
+- crontab (시간이 UTC 0에 맞춰져 있어 crontab 사용시 주의, 단, 시간대를 조절할수 있음)
+- mkdir (폴더 생성)
+- cp (복사)
+- touch (빈파일 생성)
 
 # ◎ 서버
 - Amazon Web Services Cloud
