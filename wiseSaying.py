@@ -8,7 +8,7 @@ wsurl_mid = ['%EC%82%AC%EB%9E%91','%EC%9D%B8%EC%83%9D','%EA%B3%B5%EB%B6%80','%EC
 wsurl_tail = '%20%EB%AA%85%EC%96%B8'
 
 url = wsurl_base + wsurl_mid[ranNum] + wsurl_tail
-hdr = {'referer': wsurl_base + wsurl_mid[ranNum] + wsurl_tail, 'User-Agent': 'Mozilla/5.0'}
+hdr = {'referer': wsurl_base + wsurl_mid[ranNum] + wsurl_tail, 'User-Agent':'Mozilla/5.0', 'referer' : 'http://www.naver.com'}
 req = Request(url, headers=hdr)
 page = urlopen(req)
 
