@@ -18,10 +18,14 @@
 : 오늘의 명언을 naver로부터 정보를 받아와 출력합니다. (현재 HTTP ERROR 403으로 임시 명언)
 - url : https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=blMy&query=%EA%B3%B5%EB%B6%80%20%EB%AA%85%EC%96%B8
 
-3. 개발정보
+4. 미세먼지-초미세먼지
+: 미세먼지, 초미세먼지를 알려줍니다
+- url : http://aqicn.org/city/korea/seoul/dongjak-gu/kr/
+
+4. 개발정보
 : 개발하기까지 참고한 사이트, 블로그 , 분들께 감사를 표하는 기능입니다.
 
-4. 공지사항 버튼 추가
+5. 공지사항 버튼 추가
 : 공지사항을 업로드. 
 
 # ◎ 추가 예정인 기능
