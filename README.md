@@ -15,7 +15,7 @@
 - M4ndU'blog : http://mandu-mandu.tistory.com/category/Project/Programming
 
 2. 오늘의 명언 (다음 업데이트에 오류수정 실패시 삭제될수 있습니다)
-: 오늘의 명언을 naver로부터 정보를 받아와 출력합니다. (현재 HTTP ERROR 403으로 임시 명언)
+: 오늘의 명언을 naver로부터 정보를 받아와 출력합니다.
 - url : https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=blMy&query=%EA%B3%B5%EB%B6%80%20%EB%AA%85%EC%96%B8
 
 4. 미세먼지-초미세먼지
